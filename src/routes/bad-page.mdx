@@ -1,0 +1,21 @@
+import { MyDiv } from "~/components/MyDiv";
+
+
+## Code sample
+
+```
+<MyDiv>This is MyDiv code sample</MyDiv>
+```
+
+
+## To see the issue
+
+Navigating to this page from index renders no problem.  Even hot reload works fine.  
+
+Specifically take note of the closing tag in the code sample above.
+
+Then open the console and REFRESH on this page to see...
+
+ `Cannot read properties of undefined (reading 'cloneNode')`
+
+... and closing tag in the code sample is now missing some characters.
